@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccho <ccho@student.42.kr>                  +#+  +:+       +#+        */
+/*   By: ccho <ccho@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/07 20:27:18 by ccho              #+#    #+#             */
-/*   Updated: 2022/11/10 22:01:22 by ccho             ###   ########.fr       */
+/*   Updated: 2022/11/11 16:14:57 by ccho             ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,10 @@ void	greedy(t_info	*info)
 {
 	while (info->top_b)
 	{
-		info->min_a = info->a_size;
-		info->min_b = info->b_size;
+		info->min_a = -1;
+		info->min_b = -1;
 		get_min_a_b(info);
+		//check_stack(info);
 		rotate_rr(info);
 		rotate_ra(info);
 		rotate_rb(info);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ccho <ccho@student.42.kr>                  +#+  +:+       +#+        */
+/*   By: ccho <ccho@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:30:00 by ccho              #+#    #+#             */
-/*   Updated: 2022/11/10 22:08:14 by ccho             ###   ########.fr       */
+/*   Updated: 2022/11/11 16:51:30 by ccho             ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,5 +82,7 @@ int		*argc_two_set(char	*argv, t_info	*info);
 int		*argc_more_set(char	**argv, int argc, t_info	*info);
 void	set_four(t_info	*info);
 void	sort_int_arr(t_info *info);
-int		abs(int num);
+long long		ft_abs(long long	num);
+void	check_stack(t_info	*info);
+void    check_sort_arr(t_info   *info);
 #endif

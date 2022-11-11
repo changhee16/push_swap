@@ -6,13 +6,13 @@
 /*   By: ccho <ccho@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 20:08:13 by ccho              #+#    #+#             */
-/*   Updated: 2022/11/09 21:17:29 by ccho             ###   ########seoul.kr  */
+/*   Updated: 2022/11/11 16:51:26 by ccho             ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/push_swap.h"
 
-int	abs(int num)
+long long	ft_abs(long long num)
 {
 	if (num < 0)
 		return (-num);

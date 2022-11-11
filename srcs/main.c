@@ -6,7 +6,7 @@
 /*   By: ccho <ccho@student.42seoul.kr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/02 17:33:11 by ccho              #+#    #+#             */
-/*   Updated: 2022/11/11 11:43:12 by ccho             ###   ########seoul.kr  */
+/*   Updated: 2022/11/11 17:02:13 by ccho             ###   ########seoul.kr  */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ int	main(int argc, char **argv)
 	int_to_stack(&info);
 	sort_int_arr(&info);
 	push_swap(&info);
+	//check_stack(&info);
 	free_info(&info);
 	return (0);
 }
